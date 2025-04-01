@@ -1,7 +1,7 @@
 #include <iostream>
-using namespace std;
 
-int main() {
-    cout << "Hello, World!" << endl;
-    return 0;
+int main() 
+{
+    std::cout << "Hello world!\n";
+    std::cout << "Git Integrated!\n";
 }
