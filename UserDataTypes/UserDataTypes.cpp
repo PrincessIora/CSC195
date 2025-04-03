@@ -17,7 +17,7 @@ int main()
 	std::cout << sizeof(pastrami) << std::endl;
 	std::cout << sizeof(std::string) << std::endl;
 	std::cout << sizeof(float) << std::endl;
-	std::cout << sizeof(bool) << std::endl;
+	std::cout << sizeof(bool) << std::endl; //effienct memory access > padding > bool is 1 byte but compiler will align it to 4 bytes
 
 
 }
