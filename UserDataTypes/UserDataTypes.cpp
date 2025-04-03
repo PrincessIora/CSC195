@@ -4,9 +4,15 @@
 #include <iostream>
 #include "Declarations.h"
 
+//typedef double salary; // typedef is used to create an alias for a type - the more traditional C++ way
+using salary = double; // using is a modern way to create an alias for a type
 
 int main()
 {
+	salary wage_reception = 14.4;
+	salary wage_analyst = 18.5;
+	salary wage_engineer = 32.4;
+
 	std::cout << "User Data Types\n";
 	Sandwich pastrami;
 	pastrami.meat = Pastrami;

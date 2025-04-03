@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{198f462a-67b4-4fb1-a3d7-385884d3b259}</ProjectGuid>
-    <RootNamespace>UserDataTypes</RootNamespace>
+    <ProjectGuid>{f016e032-c8c0-4143-8813-c4e08521c973}</ProjectGuid>
+    <RootNamespace>PayrollProgram</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>UserDataTypes</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,11 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Definition.cpp" />
-    <ClCompile Include="UserDataTypes.cpp" />
+    <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="PayrollProgram.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Declarations.h" />
+    <ClInclude Include="Employee.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

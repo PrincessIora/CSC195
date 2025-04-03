@@ -9,6 +9,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataTypes", "DataTypes\Data
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UserDataTypes", "UserDataTypes\UserDataTypes.vcxproj", "{198F462A-67B4-4FB1-A3D7-385884D3B259}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumberGuessingGame", "NumberGuessingGame\NumberGuessingGame.vcxproj", "{ADDD259A-C5BE-4D9B-956D-70A58DF40C68}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PayrollProgram", "PayrollProgram\PayrollProgram.vcxproj", "{F016E032-C8C0-4143-8813-C4E08521C973}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +45,22 @@ Global
 		{198F462A-67B4-4FB1-A3D7-385884D3B259}.Release|x64.Build.0 = Release|x64
 		{198F462A-67B4-4FB1-A3D7-385884D3B259}.Release|x86.ActiveCfg = Release|Win32
 		{198F462A-67B4-4FB1-A3D7-385884D3B259}.Release|x86.Build.0 = Release|Win32
+		{ADDD259A-C5BE-4D9B-956D-70A58DF40C68}.Debug|x64.ActiveCfg = Debug|x64
+		{ADDD259A-C5BE-4D9B-956D-70A58DF40C68}.Debug|x64.Build.0 = Debug|x64
+		{ADDD259A-C5BE-4D9B-956D-70A58DF40C68}.Debug|x86.ActiveCfg = Debug|Win32
+		{ADDD259A-C5BE-4D9B-956D-70A58DF40C68}.Debug|x86.Build.0 = Debug|Win32
+		{ADDD259A-C5BE-4D9B-956D-70A58DF40C68}.Release|x64.ActiveCfg = Release|x64
+		{ADDD259A-C5BE-4D9B-956D-70A58DF40C68}.Release|x64.Build.0 = Release|x64
+		{ADDD259A-C5BE-4D9B-956D-70A58DF40C68}.Release|x86.ActiveCfg = Release|Win32
+		{ADDD259A-C5BE-4D9B-956D-70A58DF40C68}.Release|x86.Build.0 = Release|Win32
+		{F016E032-C8C0-4143-8813-C4E08521C973}.Debug|x64.ActiveCfg = Debug|x64
+		{F016E032-C8C0-4143-8813-C4E08521C973}.Debug|x64.Build.0 = Debug|x64
+		{F016E032-C8C0-4143-8813-C4E08521C973}.Debug|x86.ActiveCfg = Debug|Win32
+		{F016E032-C8C0-4143-8813-C4E08521C973}.Debug|x86.Build.0 = Debug|Win32
+		{F016E032-C8C0-4143-8813-C4E08521C973}.Release|x64.ActiveCfg = Release|x64
+		{F016E032-C8C0-4143-8813-C4E08521C973}.Release|x64.Build.0 = Release|x64
+		{F016E032-C8C0-4143-8813-C4E08521C973}.Release|x86.ActiveCfg = Release|Win32
+		{F016E032-C8C0-4143-8813-C4E08521C973}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
