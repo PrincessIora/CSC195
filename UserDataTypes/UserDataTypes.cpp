@@ -7,6 +7,8 @@
 //typedef double salary; // typedef is used to create an alias for a type - the more traditional C++ way
 using salary = double; // using is a modern way to create an alias for a type
 
+
+
 int main()
 {
 	salary wage_reception = 14.4;
