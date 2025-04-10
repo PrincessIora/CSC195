@@ -19,5 +19,4 @@ int main() {
     }
 
     std::cout << "Game over. Restart the program to play again." << std::endl;
-    return 0;
 }
