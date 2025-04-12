@@ -15,7 +15,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PayrollProgram", "PayrollPr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Memory", "Memory\Memory.vcxproj", "{19AB03D3-2061-4CEA-8C97-17B1D763211C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Containers", "Containers\Containers.vcxproj", "{09384979-302C-4D34-A22B-D175F819C7E8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ContainersExample", "Containers\Containers.vcxproj", "{09384979-302C-4D34-A22B-D175F819C7E8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoryReview", "MemoryReview\MemoryReview.vcxproj", "{DF89FD8A-A7EF-443F-9520-C724CBEAEEAF}"
 EndProject
