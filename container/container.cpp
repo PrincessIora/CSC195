@@ -42,9 +42,9 @@ void useArray() {
 
 		fruits.remove("Pineapple");
 
-		for (list<string>::iterator it = fruits.begin(); it != fruits.end(); ++it)//loops through the list
+		for (string fruit : fruits)//loops through the list
 		{
-			cout << *it << endl;
+			cout << fruit << endl;
 		}
 	}
 	void useMap() {

@@ -35,11 +35,21 @@ int main()
 	cout << &chemicals[0] << endl; //returns address of first element of the array
 
 	cout << "_____________________" << endl;
+	cout << "_____________________" << endl;
 
-	for (int i = 0; i < 5; i++)
+	cout << chemicals << endl;
+
+	int size = sizeof(chemicals) / sizeof(chemicals[0]);
+
+	for (int i = 0;i< size; i++)
 	{
 		cout << chemicals[i] << endl;
-		cout << &chemicals[i] << endl; //returns address of ith element of the array
+	}
+	cout << "_____________________" << endl;
+
+	for (string chemical : chemicals)
+	{
+		cout << chemical << endl;
 	}
 	cout << "_____________________" << endl;
 
