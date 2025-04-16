@@ -1,6 +1,10 @@
 #include "Dog.h"
-#include <iostream>
 
 void Dog::Travel() {
 	std::cout << "Hop Hop Hop" << std::endl;
+}
+
+void Dog::Speak()
+{
+	std::cout << "Woof Woof" << std::endl;
 }
