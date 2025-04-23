@@ -13,7 +13,6 @@ using namespace std;
 //for performance, avoid copying large objects
 // rule of thumb: use pass by reference whenever possible | Exception: Cannot point to nothing, so if parameter can be null, use pointer
 
-
 void Write(const string& text, ostream& ostream) 
 { 
 	//text = "Ha"; // -- avoid manipulation of the passed parameter by using const

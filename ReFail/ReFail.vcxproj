@@ -24,6 +24,7 @@
     <ProjectGuid>{17fccd61-cf0b-4d4e-a83a-ce0d504059b7}</ProjectGuid>
     <RootNamespace>ReFail</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Fail</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
