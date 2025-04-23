@@ -48,7 +48,6 @@ void Read(vector<int>& numbers, ifstream& istream)
 int main()
 {
 	string text = "Hello World!\n";
-
 	cout << text; // Output to console
 
     //cin >> text; // Input from console / can only read one word
