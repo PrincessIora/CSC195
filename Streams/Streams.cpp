@@ -40,7 +40,10 @@ void Read(vector<int>& numbers, ifstream& istream)
 		int n;
 		istream >> n;
 
-		numbers.push_back(n);
+		if (!istream.fail())
+		{
+			numbers.push_back(n);
+		}
 	}
 }
 
