@@ -24,9 +24,11 @@ namespace xia
 		return p;
 	}
 
-	Point Point::operator *(float f)
+	Point Point::operator *(float s)
 	{
-		return Point(x * f, y * f);
+		return Point(x * s, y * s);
 	}
+
+	
 
 }
