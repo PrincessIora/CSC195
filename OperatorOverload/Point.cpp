@@ -31,4 +31,10 @@ namespace xia
 
 	
 
+	 std::ostream& operator<<(std::ostream& ostream, Point& point)
+	{
+		ostream << point.x << " : " << point.y << std::endl;
+		return ostream;
+	}
+
 }

@@ -6,7 +6,7 @@ namespace xia
 {
 	class Point
 	{
-	public:
+	private:
 		float x, y;
 
 	public:
@@ -16,6 +16,7 @@ namespace xia
 
 
 		void Write(std::ostream& ostream);
+		friend std::ostream& operator << (std::ostream& ostream, Point& point);
 
 		void Add(Point& point);
 		Point& operator + (Point& point);
