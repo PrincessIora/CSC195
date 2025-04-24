@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fail", "ReFail\ReFail.vcxpr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OperatorOverload", "OperatorOverload\OperatorOverload.vcxproj", "{E506ED06-16A6-427F-9940-F6AA453B21C9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Template", "Template\Template.vcxproj", "{EEE79BC9-E1C4-468A-A024-B1DA9EA66B0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{E506ED06-16A6-427F-9940-F6AA453B21C9}.Release|x64.Build.0 = Release|x64
 		{E506ED06-16A6-427F-9940-F6AA453B21C9}.Release|x86.ActiveCfg = Release|Win32
 		{E506ED06-16A6-427F-9940-F6AA453B21C9}.Release|x86.Build.0 = Release|Win32
+		{EEE79BC9-E1C4-468A-A024-B1DA9EA66B0E}.Debug|x64.ActiveCfg = Debug|x64
+		{EEE79BC9-E1C4-468A-A024-B1DA9EA66B0E}.Debug|x64.Build.0 = Debug|x64
+		{EEE79BC9-E1C4-468A-A024-B1DA9EA66B0E}.Debug|x86.ActiveCfg = Debug|Win32
+		{EEE79BC9-E1C4-468A-A024-B1DA9EA66B0E}.Debug|x86.Build.0 = Debug|Win32
+		{EEE79BC9-E1C4-468A-A024-B1DA9EA66B0E}.Release|x64.ActiveCfg = Release|x64
+		{EEE79BC9-E1C4-468A-A024-B1DA9EA66B0E}.Release|x64.Build.0 = Release|x64
+		{EEE79BC9-E1C4-468A-A024-B1DA9EA66B0E}.Release|x86.ActiveCfg = Release|Win32
+		{EEE79BC9-E1C4-468A-A024-B1DA9EA66B0E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
