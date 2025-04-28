@@ -1,75 +1,71 @@
 #pragma once
 #include <iostream>
 #include <stdexcept>
-#include <numeric>
+#include <numeric>  // For std::gcd in C++17
 
 namespace mathlib {
+
     template<typename T = int>
     class Fraction {
     private:
         T numerator;
         T denominator;
 
-        void normalize() {
-            if (denominator == 0) {
-                throw std::invalid_argument("Denominator cannot be zero");
-            }
-            if (denominator < 0) {
+        void simplify() {
+            T gcd = std::gcd(numerator, denominator);
+            numerator /= gcd;
+            denominator /= gcd;
+            if (denominator < 0) { // Keep denominator positive
                 numerator = -numerator;
                 denominator = -denominator;
             }
-            Simplify();
         }
 
     public:
-        Fraction(T num = 0, T den = 1) : numerator(num), denominator(den) {
-            normalize();
+        // Default constructor: 0/1
+        Fraction() : numerator(0), denominator(1) {}
+
+        // Parameterized constructor
+        Fraction(T num, T denom) : numerator(num), denominator(denom) {
+            if (denom == 0) {
+                throw std::invalid_argument("Denominator cannot be zero.");
+            }
+            simplify();
         }
 
-        void Simplify() {
-            T gcd_value = std::gcd(numerator, denominator);
-            numerator /= gcd_value;
-            denominator /= gcd_value;
-        }
+        // Copy constructor, assignment operator, etc., are compiler-generated
 
-        double toDouble() const {
-            return static_cast<double>(numerator) / static_cast<double>(denominator);
-        }
-
+        // Arithmetic Operators
         Fraction operator+(const Fraction& other) const {
-            return Fraction(
-                numerator * other.denominator + other.numerator * denominator,
-                denominator * other.denominator
-            );
+            T num = numerator * other.denominator + other.numerator * denominator;
+            T denom = denominator * other.denominator;
+            return Fraction(num, denom);
         }
 
         Fraction operator-(const Fraction& other) const {
-            return Fraction(
-                numerator * other.denominator - other.numerator * denominator,
-                denominator * other.denominator
-            );
+            T num = numerator * other.denominator - other.numerator * denominator;
+            T denom = denominator * other.denominator;
+            return Fraction(num, denom);
         }
 
         Fraction operator*(const Fraction& other) const {
-            return Fraction(
-                numerator * other.numerator,
-                denominator * other.denominator
-            );
+            T num = numerator * other.numerator;
+            T denom = denominator * other.denominator;
+            return Fraction(num, denom);
         }
 
         Fraction operator/(const Fraction& other) const {
             if (other.numerator == 0) {
-                throw std::invalid_argument("Cannot divide by zero fraction.");
+                throw std::invalid_argument("Cannot divide by zero.");
             }
-            return Fraction(
-                numerator * other.denominator,
-                denominator * other.numerator
-            );
+            T num = numerator * other.denominator;
+            T denom = denominator * other.numerator;
+            return Fraction(num, denom);
         }
 
-        // Comparison operators
+        // Comparison Operators
         bool operator==(const Fraction& other) const {
-            return numerator * other.denominator == denominator * other.numerator;
+            return numerator == other.numerator && denominator == other.denominator;
         }
 
         bool operator!=(const Fraction& other) const {
@@ -77,37 +73,48 @@ namespace mathlib {
         }
 
         bool operator<(const Fraction& other) const {
-            return numerator * other.denominator < denominator * other.numerator;
-        }
-
-        bool operator<=(const Fraction& other) const {
-            return *this < other || *this == other;
+            return numerator * other.denominator < other.numerator * denominator;
         }
 
         bool operator>(const Fraction& other) const {
-            return !(*this <= other);
+            return other < *this;
+        }
+
+        bool operator<=(const Fraction& other) const {
+            return !(*this > other);
         }
 
         bool operator>=(const Fraction& other) const {
             return !(*this < other);
         }
 
-        // Stream operators
-        friend std::ostream& operator<<(std::ostream& out, const Fraction<T>& frac) {
-            out << frac.numerator << '/' << frac.denominator;
-            return out;
+        // Stream Operators
+        friend std::ostream& operator<<(std::ostream& os, const Fraction& frac) {
+            os << frac.numerator << "/" << frac.denominator;
+            return os;
         }
 
-        friend std::istream& operator>>(std::istream& in, Fraction<T>& frac) {
-            T num, den;
+        friend std::istream& operator>>(std::istream& is, Fraction& frac) {
+            T num, denom;
             char slash;
-            in >> num >> slash >> den;
-            if (slash != '/') {
-                in.setstate(std::ios::failbit);
-                return in;
+            is >> num >> slash >> denom;
+            if (slash != '/' || denom == 0) {
+                is.setstate(std::ios::failbit);
             }
-            frac = Fraction(num, den);
-            return in;
+            else {
+                frac = Fraction(num, denom);
+            }
+            return is;
+        }
+
+        // Utility Methods
+        void Simplify() {
+            simplify();
+        }
+
+        double toDouble() const {
+            return static_cast<double>(numerator) / static_cast<double>(denominator);
         }
     };
-}
+
+} // namespace mathlib
