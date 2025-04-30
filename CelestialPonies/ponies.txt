@@ -1,0 +1,73 @@
+3
+Name:           Twilight Sparkle
+Lifespan:       150 years 
+Height:         145 cm 
+Weight:         260 kg 
+Coat Texture:   Shimmer
+Coat Color:     Lavender
+Tail Style:     Flowing
+Sound Profile:  Bell-like
+Accessories:    Crown
+Horn Length:    35 cm
+Aura Color:     Violet
+Magic Type:     Arcane
+Wingspan:       180 cm
+Flight Speed:   80
+Regal Title:    Princess
+2
+Name:           Rainbow Dash
+Lifespan:       100 years 
+Height:         140 cm 
+Weight:         230 kg 
+Coat Texture:   Glossy
+Coat Color:     Sky Blue
+Tail Style:     Cropped
+Sound Profile:  Galloping Thunder
+Accessories:    none
+Wingspan: 200 cm 
+Flight Speed: 150 km/h 
+1
+Name:           Rarity
+Lifespan:       120 years 
+Height:         135 cm 
+Weight:         220 kg 
+Coat Texture:   Shimmer
+Coat Color:     White
+Tail Style:     Curled
+Sound Profile:  Bell-like
+Accessories:    Clothes
+Horn Length:    30 cm
+Aura Color:     White
+Magic Type:     Glamour
+2
+Name:           Fluttershy
+Lifespan:       110 years 
+Height:         138 cm 
+Weight:         215 kg 
+Coat Texture:   Matte
+Coat Color:     Butter Yellow
+Tail Style:     Flowing
+Sound Profile:  Whisper Wind
+Accessories:    none
+Wingspan: 170 cm 
+Flight Speed: 60 km/h 
+0
+Name:           Pinkie Pie
+Lifespan:       90 years 
+Height:         133 cm 
+Weight:         210 kg 
+Coat Texture:   Flecked
+Coat Color:     Hot Pink
+Tail Style:     Curled
+Sound Profile:  Bell-like
+Accessories:    Saddle
+0
+Name:           Applejack
+Lifespan:       95 years 
+Height:         140 cm 
+Weight:         240 kg 
+Coat Texture:   Matte
+Coat Color:     Orange
+Tail Style:     Braided
+Sound Profile:  Galloping Thunder
+Accessories:    Hoofwear
